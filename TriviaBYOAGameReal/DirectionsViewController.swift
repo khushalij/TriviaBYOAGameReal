@@ -2,7 +2,7 @@
 //  DirectionsViewController.swift
 //  TriviaBYOAGameReal
 //
-//  Created by Isabella Baum 2019 on 5/10/19.
+//  Created by Felicia Wang 2019 on 5/10/19.
 //  Copyright © 2019 Khushali Joshi 2021. All rights reserved.
 //
 
@@ -10,8 +10,6 @@ import UIKit
 
 class DirectionsViewController: UIViewController {
 
-    @IBAction func continueButtonTapped(_ sender: UIButton) {
-    }
     override func viewDidLoad() {
         super.viewDidLoad()
 
