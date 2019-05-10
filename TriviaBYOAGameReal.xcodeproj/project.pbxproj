@@ -11,6 +11,7 @@
 		A5090D7422847743007EB91E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5090D7322847743007EB91E /* ViewController.swift */; };
 		A5090D7722847743007EB91E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5090D7522847743007EB91E /* Main.storyboard */; };
 		A5090D7922847744007EB91E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5090D7822847744007EB91E /* Assets.xcassets */; };
+		DE37921B2285C48800C744BE /* DirectionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE37921A2285C48800C744BE /* DirectionsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		A5090D7622847743007EB91E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A5090D7822847744007EB91E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A5090D7A22847744007EB91E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DE37921A2285C48800C744BE /* DirectionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectionsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 				A5090D7122847743007EB91E /* AppDelegate.swift */,
 				A5090D7322847743007EB91E /* ViewController.swift */,
 				A5090D7522847743007EB91E /* Main.storyboard */,
+				DE37921A2285C48800C744BE /* DirectionsViewController.swift */,
 				A5090D7822847744007EB91E /* Assets.xcassets */,
 				A5090D7A22847744007EB91E /* Info.plist */,
 			);
@@ -132,6 +135,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A5090D7422847743007EB91E /* ViewController.swift in Sources */,
+				DE37921B2285C48800C744BE /* DirectionsViewController.swift in Sources */,
 				A5090D7222847743007EB91E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

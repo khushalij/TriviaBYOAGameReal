@@ -48,10 +48,10 @@
             </objects>
             <point key="canvasLocation" x="1931" y="69"/>
         </scene>
-        <!--View Controller-->
+        <!--Directions View Controller-->
         <scene sceneID="oOT-M2-YFU">
             <objects>
-                <viewController id="1eY-dR-XxL" sceneMemberID="viewController">
+                <viewController id="1eY-dR-XxL" customClass="DirectionsViewController" customModule="TriviaBYOAGameReal" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="bcm-PL-ZWJ"/>
                         <viewControllerLayoutGuide type="bottom" id="dg8-Un-BPI"/>
@@ -64,11 +64,20 @@
                                 <rect key="frame" x="110" y="116" width="1700" height="533"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <string key="text">DIRECTIONS:    This trivia gamee will test you on how much you know about multiple topics. We will ask about animals, history, countries, school subject questions and more. </string>
+                                <string key="text">DIRECTIONS:    This trivia game will test you on how much you know about multiple topics. We will ask about animals, history, countries, school subject questions and more. </string>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wBP-tE-oMZ">
+                                <rect key="frame" x="842" y="823" width="271" height="86"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                <state key="normal" title="CONTINUE"/>
+                                <connections>
+                                    <action selector="continueButtonTapped:" destination="1eY-dR-XxL" eventType="primaryActionTriggered" id="Q9o-3Q-7RQ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.32852089410000002" blue="0.57488495110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="JhE-Qw-ice"/>
