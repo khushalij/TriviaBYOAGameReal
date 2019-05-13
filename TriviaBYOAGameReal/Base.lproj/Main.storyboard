@@ -101,10 +101,10 @@
             </objects>
             <point key="canvasLocation" x="1931" y="1629"/>
         </scene>
-        <!--topicVC-->
+        <!--Topic View Controller-->
         <scene sceneID="JWu-lu-mNg">
             <objects>
-                <viewController title="topicVC" id="Vkd-lC-nZM" customClass="topicVC" customModule="TriviaBYOAGameReal" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Vkd-lC-nZM" customClass="TopicViewController" customModule="TriviaBYOAGameReal" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="AxR-fH-ftP"/>
                         <viewControllerLayoutGuide type="bottom" id="84f-OT-9Ef"/>
@@ -127,6 +127,9 @@
                                         <rect key="frame" x="0.0" y="0.0" width="1920" height="114"/>
                                         <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                         <state key="normal" title="Animals"/>
+                                        <connections>
+                                            <segue destination="TV3-6C-rjU" kind="show" identifier="animalsSegue" id="jgi-Mf-DhF"/>
+                                        </connections>
                                     </button>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mNe-H6-CAp">
                                         <rect key="frame" x="0.0" y="114" width="1920" height="114"/>
@@ -135,6 +138,9 @@
                                         <rect key="frame" x="0.0" y="228" width="1920" height="114"/>
                                         <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                         <state key="normal" title="History"/>
+                                        <connections>
+                                            <segue destination="TV3-6C-rjU" kind="show" identifier="historySegue" id="akw-8r-sdp"/>
+                                        </connections>
                                     </button>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ufl-AX-vW8">
                                         <rect key="frame" x="0.0" y="342" width="1920" height="115"/>
@@ -143,6 +149,9 @@
                                         <rect key="frame" x="0.0" y="457" width="1920" height="114"/>
                                         <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                         <state key="normal" title="Geography "/>
+                                        <connections>
+                                            <segue destination="TV3-6C-rjU" kind="show" identifier="geographySegue" id="AbQ-YG-TeJ"/>
+                                        </connections>
                                     </button>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xSR-ib-BgG">
                                         <rect key="frame" x="0.0" y="571" width="1920" height="114"/>
@@ -150,7 +159,10 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J8h-6D-a8k">
                                         <rect key="frame" x="0.0" y="685" width="1920" height="114"/>
                                         <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
-                                        <state key="normal" title="Button"/>
+                                        <state key="normal" title="Famous People"/>
+                                        <connections>
+                                            <segue destination="TV3-6C-rjU" kind="show" identifier="famousPeopleSegue" id="2OM-MZ-8mJ"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -177,6 +189,41 @@
             </objects>
             <point key="canvasLocation" x="1931" y="3480"/>
         </scene>
+        <!--Questions View Controller-->
+        <scene sceneID="1EF-hu-v8m">
+            <objects>
+                <viewController id="TV3-6C-rjU" customClass="QuestionsViewController" customModule="TriviaBYOAGameReal" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="SOt-Ab-Cbk"/>
+                        <viewControllerLayoutGuide type="bottom" id="1oY-b0-r9P"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="dKs-M2-8fa">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Topic" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RlX-y7-CwI">
+                                <rect key="frame" x="914" y="99" width="93" height="46"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.012113634483464647" green="0.34480348909837871" blue="0.59267925126903553" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="RlX-y7-CwI" firstAttribute="leading" secondItem="dKs-M2-8fa" secondAttribute="leading" constant="914" id="MD9-6c-rXu"/>
+                            <constraint firstAttribute="trailing" secondItem="RlX-y7-CwI" secondAttribute="trailing" constant="913" id="Qcg-bb-Ik5"/>
+                            <constraint firstItem="RlX-y7-CwI" firstAttribute="top" secondItem="dKs-M2-8fa" secondAttribute="top" constant="99" id="ZXT-lJ-qOv"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="G5h-9M-7b5"/>
+                    </view>
+                    <connections>
+                        <outlet property="topicLabel" destination="RlX-y7-CwI" id="Cd2-GG-YGc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ftO-iG-fsZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1931" y="4962"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="suf-o1-RZz">
             <objects>
@@ -196,4 +243,7 @@
             <point key="canvasLocation" x="-366" y="69"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="AbQ-YG-TeJ"/>
+    </inferredMetricsTieBreakers>
 </document>
