@@ -2,7 +2,7 @@
 //  DirectionsViewController.swift
 //  TriviaBYOAGameReal
 //
-//  Created by Isabella Baum 2019 on 5/10/19.
+//  Created by Felicia Wang 2019 on 5/10/19.
 //  Copyright © 2019 Khushali Joshi 2021. All rights reserved.
 //
 
@@ -15,19 +15,19 @@ class DirectionsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        
     }
 
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    @IBAction func continueButtonTapped(_ sender: UIButton) {
+        performSegue(withIdentifier: "totopicVC", sender: nil)
+    }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        let destinationVC = segue.destination as! topicVC
+        
+        
     }
-    */
-
+    
 }
 

@@ -18,5 +18,12 @@ class ViewController: UIViewController {
     }
 
 
+    @IBAction func whenStartButtonPressed(_ sender: UIButton) {
+      //  performSegue(withIdentifier: "toDirectionsSegue", sender: sender)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let DViewController = segue.destination as! DirectionsViewController
+    }
 }
 
