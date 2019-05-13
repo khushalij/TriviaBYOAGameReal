@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1215C972228704A5006211AD /* topicVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1215C971228704A5006211AD /* topicVC.swift */; };
+		1215C972228704A5006211AD /* TopicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1215C971228704A5006211AD /* TopicViewController.swift */; };
 		1D6CEEEF2285C6F700FDE3E6 /* DirectionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6CEEEE2285C6F700FDE3E6 /* DirectionsViewController.swift */; };
+		1DF3957F2289BBCE00B96F7F /* QuestionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DF3957E2289BBCE00B96F7F /* QuestionsViewController.swift */; };
 		A5090D7222847743007EB91E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5090D7122847743007EB91E /* AppDelegate.swift */; };
 		A5090D7422847743007EB91E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5090D7322847743007EB91E /* ViewController.swift */; };
 		A5090D7722847743007EB91E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5090D7522847743007EB91E /* Main.storyboard */; };
@@ -16,8 +17,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1215C971228704A5006211AD /* topicVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = topicVC.swift; sourceTree = "<group>"; };
+		1215C971228704A5006211AD /* TopicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicViewController.swift; sourceTree = "<group>"; };
 		1D6CEEEE2285C6F700FDE3E6 /* DirectionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectionsViewController.swift; sourceTree = "<group>"; };
+		1DF3957E2289BBCE00B96F7F /* QuestionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsViewController.swift; sourceTree = "<group>"; };
 		A5090D6E22847743007EB91E /* TriviaBYOAGameReal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TriviaBYOAGameReal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5090D7122847743007EB91E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A5090D7322847743007EB91E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -56,11 +58,12 @@
 		A5090D7022847743007EB91E /* TriviaBYOAGameReal */ = {
 			isa = PBXGroup;
 			children = (
-				1215C971228704A5006211AD /* topicVC.swift */,
+				1215C971228704A5006211AD /* TopicViewController.swift */,
 				A5090D7122847743007EB91E /* AppDelegate.swift */,
 				A5090D7322847743007EB91E /* ViewController.swift */,
 				1D6CEEEE2285C6F700FDE3E6 /* DirectionsViewController.swift */,
 				A5090D7522847743007EB91E /* Main.storyboard */,
+				1DF3957E2289BBCE00B96F7F /* QuestionsViewController.swift */,
 				A5090D7822847744007EB91E /* Assets.xcassets */,
 				A5090D7A22847744007EB91E /* Info.plist */,
 			);
@@ -137,7 +140,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1215C972228704A5006211AD /* topicVC.swift in Sources */,
+				1215C972228704A5006211AD /* TopicViewController.swift in Sources */,
+				1DF3957F2289BBCE00B96F7F /* QuestionsViewController.swift in Sources */,
 				A5090D7422847743007EB91E /* ViewController.swift in Sources */,
 				1D6CEEEF2285C6F700FDE3E6 /* DirectionsViewController.swift in Sources */,
 				A5090D7222847743007EB91E /* AppDelegate.swift in Sources */,

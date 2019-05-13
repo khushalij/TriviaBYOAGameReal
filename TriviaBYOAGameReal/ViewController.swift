@@ -23,7 +23,9 @@ class ViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if(segue.identifier=="toDirectionsSegue"){
         let DViewController = segue.destination as! DirectionsViewController
+        }
     }
 }
 

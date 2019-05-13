@@ -26,7 +26,7 @@ class DirectionsViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let destinationVC = segue.destination as! topicVC
+        let destinationVC = segue.destination as! TopicViewController
         
         
     }
