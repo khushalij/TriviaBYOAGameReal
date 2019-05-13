@@ -9,7 +9,7 @@
 import UIKit
 
 class DirectionsViewController: UIViewController {
-
+    let animalsArrayQ = ["What animal has the longest lifespan?","A newborn kangaroo is about the size of a...?","How many times can a hummingbird flap its wings per second?","What animal has the highest blood pressure?","How mnay noses do slugs have?"]
     @IBAction func continueButtonTapped(_ sender: UIButton) {
     }
     override func viewDidLoad() {
@@ -30,3 +30,4 @@ class DirectionsViewController: UIViewController {
     */
 
 }
+

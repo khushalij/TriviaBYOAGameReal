@@ -35,6 +35,7 @@
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                 <state key="normal" title="START"/>
                                 <connections>
+                                    <action selector="startButtonTapped:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="yIH-dQ-rZK"/>
                                     <segue destination="1eY-dR-XxL" kind="show" id="CnK-d0-jQv"/>
                                 </connections>
                             </button>
@@ -64,7 +65,7 @@
                                 <rect key="frame" x="110" y="116" width="1700" height="533"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <string key="text">DIRECTIONS:    This trivia game will test you on how much you know about multiple topics. We will ask about animals, history, countries, school subject questions and more. </string>
+                                <string key="text">DIRECTIONS:    This trivia game will test you on how much you know about multiple topics. We will ask about animals, history, countries, school subject questions and more.  </string>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
