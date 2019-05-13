@@ -74,7 +74,8 @@
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                 <state key="normal" title="CONTINUE"/>
                                 <connections>
-                                    <action selector="continueButtonTapped:" destination="1eY-dR-XxL" eventType="primaryActionTriggered" id="Q9o-3Q-7RQ"/>
+                                    <action selector="continueButtonTapped:" destination="1eY-dR-XxL" eventType="primaryActionTriggered" id="5mF-bk-hht"/>
+                                    <segue destination="Vkd-lC-nZM" kind="show" identifier="totopicVC" id="G4O-f8-tYH"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -99,6 +100,82 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yaL-tU-X0o" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1931" y="1629"/>
+        </scene>
+        <!--topicVC-->
+        <scene sceneID="JWu-lu-mNg">
+            <objects>
+                <viewController title="topicVC" id="Vkd-lC-nZM" customClass="topicVC" customModule="TriviaBYOAGameReal" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="AxR-fH-ftP"/>
+                        <viewControllerLayoutGuide type="bottom" id="84f-OT-9Ef"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="9sf-Ep-9ao">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" editable="NO" text="Choose your topic" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A8w-WD-lRl">
+                                <rect key="frame" x="249" y="145" width="1386" height="70"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="HG8-CR-Uu3">
+                                <rect key="frame" x="0.0" y="281" width="1920" height="799"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kk5-bE-Wba">
+                                        <rect key="frame" x="0.0" y="0.0" width="1920" height="114"/>
+                                        <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                        <state key="normal" title="Animals"/>
+                                    </button>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mNe-H6-CAp">
+                                        <rect key="frame" x="0.0" y="114" width="1920" height="114"/>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9xU-Kh-abo">
+                                        <rect key="frame" x="0.0" y="228" width="1920" height="114"/>
+                                        <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                        <state key="normal" title="History"/>
+                                    </button>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ufl-AX-vW8">
+                                        <rect key="frame" x="0.0" y="342" width="1920" height="115"/>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P3D-aA-a0R">
+                                        <rect key="frame" x="0.0" y="457" width="1920" height="114"/>
+                                        <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                        <state key="normal" title="Geography "/>
+                                    </button>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xSR-ib-BgG">
+                                        <rect key="frame" x="0.0" y="571" width="1920" height="114"/>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J8h-6D-a8k">
+                                        <rect key="frame" x="0.0" y="685" width="1920" height="114"/>
+                                        <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                        <state key="normal" title="Button"/>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="799" id="g3S-cv-pKq"/>
+                                    <constraint firstAttribute="width" constant="1920" id="gEv-dj-BOy"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.32852089410000002" blue="0.57488495110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="HG8-CR-Uu3" firstAttribute="leading" secondItem="9sf-Ep-9ao" secondAttribute="leading" id="6Jx-dI-Qfz"/>
+                            <constraint firstItem="A8w-WD-lRl" firstAttribute="top" secondItem="AxR-fH-ftP" secondAttribute="bottom" id="7tK-XU-huG"/>
+                            <constraint firstItem="HG8-CR-Uu3" firstAttribute="top" secondItem="A8w-WD-lRl" secondAttribute="bottom" constant="66" id="Qhz-bp-zzz"/>
+                            <constraint firstItem="A8w-WD-lRl" firstAttribute="leading" secondItem="Xpv-13-uUT" secondAttribute="leading" constant="159" id="ZXA-Yz-lNK"/>
+                            <constraint firstAttribute="trailing" secondItem="HG8-CR-Uu3" secondAttribute="trailing" id="aH5-dC-z7R"/>
+                            <constraint firstItem="HG8-CR-Uu3" firstAttribute="top" secondItem="A8w-WD-lRl" secondAttribute="bottom" constant="66" id="aJA-Kt-Xrs"/>
+                            <constraint firstAttribute="bottom" secondItem="HG8-CR-Uu3" secondAttribute="bottom" id="lgD-ew-Vxi"/>
+                            <constraint firstItem="Xpv-13-uUT" firstAttribute="trailing" secondItem="A8w-WD-lRl" secondAttribute="trailing" constant="195" id="sVE-L9-F1K"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Xpv-13-uUT"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FA2-fA-Ziy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1931" y="3480"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="suf-o1-RZz">
