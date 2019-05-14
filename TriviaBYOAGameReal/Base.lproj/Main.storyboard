@@ -221,6 +221,33 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SYT-Ww-Mh5">
+                                <rect key="frame" x="456" y="607" width="195" height="86"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="firstChoiceButton:" destination="TV3-6C-rjU" eventType="primaryActionTriggered" id="562-AS-bss"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nCr-uM-sja">
+                                <rect key="frame" x="863" y="607" width="195" height="86"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="secondChoiceButton:" destination="TV3-6C-rjU" eventType="primaryActionTriggered" id="yx6-Xf-VqK"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zGz-ce-GDk">
+                                <rect key="frame" x="1280" y="607" width="195" height="86"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="thirdChoiceButton:" destination="TV3-6C-rjU" eventType="primaryActionTriggered" id="ERq-8R-e06"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.012113634483464647" green="0.34480348909837871" blue="0.59267925126903553" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
