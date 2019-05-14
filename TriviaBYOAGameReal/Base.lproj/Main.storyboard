@@ -104,7 +104,7 @@
         <!--topicVC-->
         <scene sceneID="JWu-lu-mNg">
             <objects>
-                <viewController title="topicVC" id="Vkd-lC-nZM" customClass="topicVC" customModule="TriviaBYOAGameReal" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="topicVC" id="Vkd-lC-nZM" customClass="TopicViewController" customModule="TriviaBYOAGameReal" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="AxR-fH-ftP"/>
                         <viewControllerLayoutGuide type="bottom" id="84f-OT-9Ef"/>
