@@ -12,9 +12,11 @@ class QuestionsViewController: UIViewController {
 
     @IBOutlet weak var topicLabel: UILabel!
     
+    var topicName = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        topicLabel.text = topicName
         // Do any additional setup after loading the view.
     }
 
