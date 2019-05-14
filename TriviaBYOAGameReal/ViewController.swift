@@ -26,6 +26,22 @@ class ViewController: UIViewController {
         if(segue.identifier=="toDirectionsSegue"){
         let DViewController = segue.destination as! DirectionsViewController
         }
+        else if(segue.identifier=="animalsSegue"){
+            let QAViewController = segue.destination as! QuestionsViewController
+            QAViewController.topicName = "Animals!"
+        }
+        else if(segue.identifier=="historySegue"){
+            let QHViewController = segue.destination as! QuestionsViewController
+            QHViewController.topicName = "History!"
+        }
+        else if(segue.identifier=="geographySegue"){
+            let QGViewController=segue.destination as! QuestionsViewController
+            QGViewController.topicName = "Geography!"
+        }
+        else if(segue.identifier=="famousPeopleSegue"){
+            let QFPViewController = segue.destination as! QuestionsViewController
+            QFPViewController.topicName = "Famous People!"
+        }
     }
 }
 
