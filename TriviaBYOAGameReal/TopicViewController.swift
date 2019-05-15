@@ -1,5 +1,5 @@
 //
-//  topicVC.swift
+//  TopicViewController.swift
 //  TriviaBYOAGameReal
 //
 //  Created by Aarti Jain on 5/11/19.
