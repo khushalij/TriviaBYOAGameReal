@@ -222,7 +222,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SYT-Ww-Mh5">
-                                <rect key="frame" x="456" y="607" width="195" height="86"/>
+                                <rect key="frame" x="110" y="607" width="385" height="86"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                 <state key="normal" title="Button"/>
@@ -230,22 +230,22 @@
                                     <action selector="firstChoiceButton:" destination="TV3-6C-rjU" eventType="primaryActionTriggered" id="562-AS-bss"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nCr-uM-sja">
-                                <rect key="frame" x="863" y="607" width="195" height="86"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <action selector="secondChoiceButton:" destination="TV3-6C-rjU" eventType="primaryActionTriggered" id="yx6-Xf-VqK"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zGz-ce-GDk">
-                                <rect key="frame" x="1280" y="607" width="195" height="86"/>
+                                <rect key="frame" x="1453" y="607" width="357" height="86"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
                                     <action selector="thirdChoiceButton:" destination="TV3-6C-rjU" eventType="primaryActionTriggered" id="ERq-8R-e06"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nCr-uM-sja">
+                                <rect key="frame" x="787" y="607" width="347" height="86"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="secondChoiceButton:" destination="TV3-6C-rjU" eventType="primaryActionTriggered" id="yx6-Xf-VqK"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -261,7 +261,10 @@
                         <viewLayoutGuide key="safeArea" id="G5h-9M-7b5"/>
                     </view>
                     <connections>
+                        <outlet property="firstButtonOutlet" destination="SYT-Ww-Mh5" id="1DZ-sg-kbO"/>
                         <outlet property="questionLabel" destination="U5e-hE-6Eq" id="k7x-t4-2r2"/>
+                        <outlet property="secondButtonOutlet" destination="nCr-uM-sja" id="Jig-af-SRt"/>
+                        <outlet property="thirdButtonOutlet" destination="zGz-ce-GDk" id="aQd-sm-0k9"/>
                         <outlet property="topicLabel" destination="RlX-y7-CwI" id="Cd2-GG-YGc"/>
                     </connections>
                 </viewController>

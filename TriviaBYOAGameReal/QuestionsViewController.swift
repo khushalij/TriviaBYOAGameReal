@@ -17,6 +17,10 @@ class QuestionsViewController: UIViewController {
     
     @IBOutlet weak var questionLabel: UILabel!
     
+    @IBOutlet weak var firstButtonOutlet: UIButton!
+    @IBOutlet weak var secondButtonOutlet: UIButton!
+    @IBOutlet weak var thirdButtonOutlet: UIButton!
+    
     var animalQuestion: String = ""
     var historyQuestion: Array = [0]
     var famousPeopleQuestion: Array = [0]
@@ -37,20 +41,109 @@ class QuestionsViewController: UIViewController {
             questionLabel.text = question
             //goes through the array and prints the last question...but need a random question generater... need to figure out how the button will have the text of answers. need o identify the right answer.
         }
+        //if statements for each question
         
+        //ANIMALS
         
+        //animal question 1
+        if (questionLabel.text == animalsArrayQ[0])
+        {
+            firstButtonOutlet.setTitle("Blue Whale",for: UIControl.State.normal)
+            secondButtonOutlet.setTitle("Giant Tortoise", for: UIControl.State.normal)
+            thirdButtonOutlet.setTitle("Elephant", for: UIControl.State.normal)
+        }
+        
+        //animal question 2
+        if (questionLabel.text == animalsArrayQ[1])
+        {
+            firstButtonOutlet.setTitle("Plum",for: UIControl.State.normal)
+            secondButtonOutlet.setTitle("Grapefruit", for: UIControl.State.normal)
+            thirdButtonOutlet.setTitle("Lima Bean", for: UIControl.State.normal)
+        }
+        
+        //animal question 3
+        if (questionLabel.text == animalsArrayQ[2])
+        {
+            firstButtonOutlet.setTitle("Hello",for: UIControl.State.normal)
+            secondButtonOutlet.setTitle("helloo", for: UIControl.State.normal)
+            thirdButtonOutlet.setTitle("heloooo", for: UIControl.State.normal)
+        }
+        
+        //animal question 4
+        if (questionLabel.text == animalsArrayQ[3])
+        {
+            firstButtonOutlet.setTitle("20",for: UIControl.State.normal)
+            secondButtonOutlet.setTitle("80", for: UIControl.State.normal)
+            thirdButtonOutlet.setTitle("160", for: UIControl.State.normal)
+        }
+        
+        //animal question 5
+        if (questionLabel.text == animalsArrayQ[4])
+        {
+            firstButtonOutlet.setTitle("4",for: UIControl.State.normal)
+            secondButtonOutlet.setTitle("3", for: UIControl.State.normal)
+            thirdButtonOutlet.setTitle("0", for: UIControl.State.normal)
+        }
+        
+        //HISTORY
+        
+        //history question 1
+        if (questionLabel.text == historyArrayQ[0])
+        {
+            firstButtonOutlet.setTitle("1502",for: UIControl.State.normal)
+            secondButtonOutlet.setTitle("1492", for: UIControl.State.normal)
+            thirdButtonOutlet.setTitle("1467", for: UIControl.State.normal)
+        }
+        
+        //history question 2
+        if (questionLabel.text == historyArrayQ[1])
+        {
+            firstButtonOutlet.setTitle("Plum",for: UIControl.State.normal)
+            secondButtonOutlet.setTitle("Grapefruit", for: UIControl.State.normal)
+            thirdButtonOutlet.setTitle("Lima Bean", for: UIControl.State.normal)
+        }
+        
+        //history question 3
+        if (questionLabel.text == historyArrayQ[2])
+        {
+            firstButtonOutlet.setTitle("Hello",for: UIControl.State.normal)
+            secondButtonOutlet.setTitle("helloo", for: UIControl.State.normal)
+            thirdButtonOutlet.setTitle("heloooo", for: UIControl.State.normal)
+        }
+        
+        //history question 4
+        if (questionLabel.text == historyArrayQ[3])
+        {
+            firstButtonOutlet.setTitle("20",for: UIControl.State.normal)
+            secondButtonOutlet.setTitle("80", for: UIControl.State.normal)
+            thirdButtonOutlet.setTitle("160", for: UIControl.State.normal)
+        }
+        
+        //history question 5
+        if (questionLabel.text == historyArrayQ[4])
+        {
+            firstButtonOutlet.setTitle("4",for: UIControl.State.normal)
+            secondButtonOutlet.setTitle("3", for: UIControl.State.normal)
+            thirdButtonOutlet.setTitle("0", for: UIControl.State.normal)
+        }
     }
     
+    
+    
+    
+    
+    
     @IBAction func firstChoiceButton(_ sender: UIButton) {
-        
     }
     
     @IBAction func secondChoiceButton(_ sender: UIButton) {
+      
     }
     
     @IBAction func thirdChoiceButton(_ sender: UIButton) {
     }
     
+    //use setTitle for button!!!
     /*
     // MARK: - Navigation
 
