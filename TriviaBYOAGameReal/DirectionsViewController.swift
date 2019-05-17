@@ -22,9 +22,7 @@ class DirectionsViewController: UIViewController {
         performSegue(withIdentifier: "totopicVC", sender: nil)
     }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let destinationVC = segue.destination as! TopicViewController
-    }
+    
     
 }
 

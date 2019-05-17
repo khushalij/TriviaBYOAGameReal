@@ -7,15 +7,16 @@
 //
 
 import UIKit
+//arrays for questions
+let animalsArrayQ: [String] = ["What animal has the longest lifespan?","A newborn kangaroo is about the size of a...?","How many times can a hummingbird flap its wings per second?","What animal has the highest blood pressure?","How many noses do slugs have?"]
+let historyArrayQ: [String] = ["When was America discovered?","What Europen language was first spoken in the United States?","What is the real name of Uncle Sam?","Which year was CNN established?","In which state did Thomas Edison die?"]
+let famousPeopleArrayQ: [String] = ["What is the name of Abraham Lincoln's dog?","What famous Swiss citizen said of nuclear bombs: 'If I had known, I would have become a watchmaker'?","Which island nation is popstar Rihanna from?","What's Natalie Portman's ACTUAl last name?","How many Hemsworth Brothers are there?"]
+let aroundTheWorldArrayQ: [String] = ["Coffee is originally from...","What country has the most daily newspapers?","What is the largest freshwater lake in the world?","Where would you find the Sea of Tranquility?","What is the world's biggest island?"]
+
 
 class QuestionsViewController: UIViewController {
-//arrays for questions
-    let animalsArrayQ: [String] = ["What animal has the longest lifespan?","A newborn kangaroo is about the size of a...?","How many times can a hummingbird flap its wings per second?","What animal has the highest blood pressure?","How many noses do slugs have?"]
-    let historyArrayQ: [String] = ["When was America discovered?","What Europen language was first spoken in the United States?","What is the real name of Uncle Sam?","Which year was CNN established?","In which state did Thomas Edison die?"]
-    let famousPeopleArrayQ: [String] = ["What is the name of Abraham Lincoln's dog?","What famous Swiss citizen said of nuclear bombs: 'If I had known, I would have become a watchmaker'?","Which island nation is popstar Rihanna from?","What's Natalie Portman's ACTUAl last name?","How many Hemsworth Brothers are there?"]
-    let aroundTheWorldArrayQ: [String] = ["Coffee is originally from...","What country has the most daily newspapers?","What is the largest freshwater lake in the world?","Where would you find the Sea of Tranquility?","What is the world's biggest island?"]
     
-    @IBOutlet weak var questionLabel: UILabel!
+    @IBOutlet weak public var questionLabel: UILabel!
     
     @IBOutlet weak var firstButtonOutlet: UIButton!
     @IBOutlet weak var secondButtonOutlet: UIButton!
@@ -26,7 +27,6 @@ class QuestionsViewController: UIViewController {
     var famousPeopleQuestion: Array = [0]
     var aroundTheWorldQuestion: Array = [0]
     
-    @IBOutlet weak var topicLabel: UILabel!
     
     var topicName = ""
     
@@ -126,6 +126,8 @@ class QuestionsViewController: UIViewController {
             secondButtonOutlet.setTitle("Virginia", for: UIControl.State.normal)
             thirdButtonOutlet.setTitle("Illinois", for: UIControl.State.normal)
         }
+    
+        
     }
     
     
@@ -155,3 +157,22 @@ class QuestionsViewController: UIViewController {
     */
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
