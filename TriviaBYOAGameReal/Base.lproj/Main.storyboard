@@ -35,6 +35,7 @@
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                 <state key="normal" title="START"/>
                                 <connections>
+                                    <action selector="startButtonTapped:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="Hki-P8-hwD"/>
                                     <action selector="whenStartButtonPressed:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="VMW-dn-9zr"/>
                                     <segue destination="1eY-dR-XxL" kind="show" id="d7h-Tc-ucD"/>
                                 </connections>
@@ -128,6 +129,7 @@
                                         <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                         <state key="normal" title="Animals"/>
                                         <connections>
+                                            <action selector="animalsButtonPressed:" destination="Vkd-lC-nZM" eventType="primaryActionTriggered" id="6gz-Pu-aVe"/>
                                             <segue destination="TV3-6C-rjU" kind="show" identifier="animalsSegue" id="jgi-Mf-DhF"/>
                                         </connections>
                                     </button>
@@ -139,6 +141,7 @@
                                         <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                         <state key="normal" title="History"/>
                                         <connections>
+                                            <action selector="historyButtonPressed:" destination="Vkd-lC-nZM" eventType="primaryActionTriggered" id="678-KA-Ekf"/>
                                             <segue destination="TV3-6C-rjU" kind="show" identifier="historySegue" id="akw-8r-sdp"/>
                                         </connections>
                                     </button>
@@ -150,6 +153,7 @@
                                         <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                         <state key="normal" title="Geography "/>
                                         <connections>
+                                            <action selector="geoButtonPressed:" destination="Vkd-lC-nZM" eventType="primaryActionTriggered" id="SWL-uh-n5z"/>
                                             <segue destination="TV3-6C-rjU" kind="show" identifier="geographySegue" id="AbQ-YG-TeJ"/>
                                         </connections>
                                     </button>
@@ -161,6 +165,7 @@
                                         <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                         <state key="normal" title="Famous People"/>
                                         <connections>
+                                            <action selector="famousButtonPressed:" destination="Vkd-lC-nZM" eventType="primaryActionTriggered" id="E2u-Aj-jlh"/>
                                             <segue destination="TV3-6C-rjU" kind="show" identifier="famousPeopleSegue" id="2OM-MZ-8mJ"/>
                                         </connections>
                                     </button>
@@ -201,12 +206,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Topic" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RlX-y7-CwI">
-                                <rect key="frame" x="914" y="99" width="93" height="46"/>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wi7-XO-BQu">
                                 <rect key="frame" x="914" y="257" width="0.0" height="0.0"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -250,19 +249,10 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.012113634483464647" green="0.34480348909837871" blue="0.59267925126903553" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="RlX-y7-CwI" firstAttribute="leading" secondItem="dKs-M2-8fa" secondAttribute="leading" constant="914" id="MD9-6c-rXu"/>
-                            <constraint firstAttribute="trailing" secondItem="RlX-y7-CwI" secondAttribute="trailing" constant="913" id="Qcg-bb-Ik5"/>
-                            <constraint firstItem="RlX-y7-CwI" firstAttribute="top" secondItem="dKs-M2-8fa" secondAttribute="top" constant="99" id="ZXT-lJ-qOv"/>
-                            <constraint firstAttribute="trailing" secondItem="RlX-y7-CwI" secondAttribute="trailing" constant="913" id="bm1-Jz-UJV"/>
-                            <constraint firstItem="RlX-y7-CwI" firstAttribute="leading" secondItem="dKs-M2-8fa" secondAttribute="leading" constant="914" id="dAT-oa-JOX"/>
-                            <constraint firstItem="RlX-y7-CwI" firstAttribute="top" secondItem="dKs-M2-8fa" secondAttribute="top" constant="99" id="mIO-G9-WgR"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="G5h-9M-7b5"/>
                     </view>
                     <connections>
                         <outlet property="questionLabel" destination="U5e-hE-6Eq" id="k7x-t4-2r2"/>
-                        <outlet property="topicLabel" destination="RlX-y7-CwI" id="Cd2-GG-YGc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ftO-iG-fsZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
