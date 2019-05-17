@@ -64,17 +64,17 @@ class QuestionsViewController: UIViewController {
         //animal question 3
         if (questionLabel.text == animalsArrayQ[2])
         {
-            firstButtonOutlet.setTitle("Hello",for: UIControl.State.normal)
-            secondButtonOutlet.setTitle("helloo", for: UIControl.State.normal)
-            thirdButtonOutlet.setTitle("heloooo", for: UIControl.State.normal)
+            firstButtonOutlet.setTitle("20",for: UIControl.State.normal)
+            secondButtonOutlet.setTitle("80", for: UIControl.State.normal)
+            thirdButtonOutlet.setTitle("160", for: UIControl.State.normal)
         }
         
         //animal question 4
         if (questionLabel.text == animalsArrayQ[3])
         {
-            firstButtonOutlet.setTitle("20",for: UIControl.State.normal)
-            secondButtonOutlet.setTitle("80", for: UIControl.State.normal)
-            thirdButtonOutlet.setTitle("160", for: UIControl.State.normal)
+            firstButtonOutlet.setTitle("Giraffe",for: UIControl.State.normal)
+            secondButtonOutlet.setTitle("Elephant", for: UIControl.State.normal)
+            thirdButtonOutlet.setTitle("Flea", for: UIControl.State.normal)
         }
         
         //animal question 5
@@ -98,33 +98,33 @@ class QuestionsViewController: UIViewController {
         //history question 2
         if (questionLabel.text == historyArrayQ[1])
         {
-            firstButtonOutlet.setTitle("Plum",for: UIControl.State.normal)
-            secondButtonOutlet.setTitle("Grapefruit", for: UIControl.State.normal)
-            thirdButtonOutlet.setTitle("Lima Bean", for: UIControl.State.normal)
+            firstButtonOutlet.setTitle("Spanish",for: UIControl.State.normal)
+            secondButtonOutlet.setTitle("German", for: UIControl.State.normal)
+            thirdButtonOutlet.setTitle("Italian", for: UIControl.State.normal)
         }
         
         //history question 3
         if (questionLabel.text == historyArrayQ[2])
         {
-            firstButtonOutlet.setTitle("Hello",for: UIControl.State.normal)
-            secondButtonOutlet.setTitle("helloo", for: UIControl.State.normal)
-            thirdButtonOutlet.setTitle("heloooo", for: UIControl.State.normal)
+            firstButtonOutlet.setTitle("Sam Smith",for: UIControl.State.normal)
+            secondButtonOutlet.setTitle("Uncle Sam..duh", for: UIControl.State.normal)
+            thirdButtonOutlet.setTitle("Samuel Wilson", for: UIControl.State.normal)
         }
         
         //history question 4
         if (questionLabel.text == historyArrayQ[3])
         {
-            firstButtonOutlet.setTitle("20",for: UIControl.State.normal)
-            secondButtonOutlet.setTitle("80", for: UIControl.State.normal)
-            thirdButtonOutlet.setTitle("160", for: UIControl.State.normal)
+            firstButtonOutlet.setTitle("1980",for: UIControl.State.normal)
+            secondButtonOutlet.setTitle("1990", for: UIControl.State.normal)
+            thirdButtonOutlet.setTitle("1970", for: UIControl.State.normal)
         }
         
         //history question 5
         if (questionLabel.text == historyArrayQ[4])
         {
-            firstButtonOutlet.setTitle("4",for: UIControl.State.normal)
-            secondButtonOutlet.setTitle("3", for: UIControl.State.normal)
-            thirdButtonOutlet.setTitle("0", for: UIControl.State.normal)
+            firstButtonOutlet.setTitle("New Jersey",for: UIControl.State.normal)
+            secondButtonOutlet.setTitle("Virginia", for: UIControl.State.normal)
+            thirdButtonOutlet.setTitle("Illinois", for: UIControl.State.normal)
         }
     }
     
