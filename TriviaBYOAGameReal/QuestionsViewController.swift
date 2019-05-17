@@ -32,7 +32,7 @@ class QuestionsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        topicLabel.text = topicName
+       // topicLabel.text = topicName
         // Do any additional setup after loading the view.
         
         for question in animalsArrayQ
