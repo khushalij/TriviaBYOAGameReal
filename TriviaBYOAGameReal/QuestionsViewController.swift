@@ -175,6 +175,48 @@ class QuestionsViewController: UIViewController {
             thirdButtonOutlet.setTitle("4", for: UIControl.State.normal)
         }
         
+        
+        //Around The World
+        
+        //famousPeople question 1
+        if (questionLabel.text == famousPeopleArrayQ[0])
+        {
+            firstButtonOutlet.setTitle("Ben",for: UIControl.State.normal)
+            secondButtonOutlet.setTitle("Fido", for: UIControl.State.normal)
+            thirdButtonOutlet.setTitle("Justice", for: UIControl.State.normal)
+        }
+        
+        //famousPeople question 2
+        if (questionLabel.text == famousPeopleArrayQ[1])
+        {
+            firstButtonOutlet.setTitle("Martina Hangus",for: UIControl.State.normal)
+            secondButtonOutlet.setTitle("Roger Federer", for: UIControl.State.normal)
+            thirdButtonOutlet.setTitle("Albert Einstein", for: UIControl.State.normal)
+        }
+        
+        //famousPeople question 3
+        if (questionLabel.text == famousPeopleArrayQ[2])
+        {
+            firstButtonOutlet.setTitle("Dominican Republic",for: UIControl.State.normal)
+            secondButtonOutlet.setTitle("Barbados", for: UIControl.State.normal)
+            thirdButtonOutlet.setTitle("Aruba", for: UIControl.State.normal)
+        }
+        
+        //famousPeople question 4
+        if (questionLabel.text == famousPeopleArrayQ[3])
+        {
+            firstButtonOutlet.setTitle("Hershlag",for: UIControl.State.normal)
+            secondButtonOutlet.setTitle("Douglas", for: UIControl.State.normal)
+            thirdButtonOutlet.setTitle("Portman", for: UIControl.State.normal)
+        }
+        
+        //famousPeople question 5
+        if (questionLabel.text == famousPeopleArrayQ[4])
+        {
+            firstButtonOutlet.setTitle("2",for: UIControl.State.normal)
+            secondButtonOutlet.setTitle("3", for: UIControl.State.normal)
+            thirdButtonOutlet.setTitle("4", for: UIControl.State.normal)
+        }
     }
     
     
