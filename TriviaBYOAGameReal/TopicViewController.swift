@@ -15,7 +15,7 @@ class TopicViewController: UIViewController {
     var FamousQ: [String] = []
     var GeosQ: [String] = []
   
-    var topicQuestion = ""
+    var topicQuestion: String!
     
     @IBAction func animalsButtonPressed(_ sender: Any) {
         let animals = animalsArrayQ.randomElement()
@@ -56,19 +56,19 @@ class TopicViewController: UIViewController {
         let destinationVC = segue.destination as! QuestionsViewController
         if segue.identifier == "historySegue"{
            let QHViewController = segue.destination as! QuestionsViewController
-            QHViewController.questionLabel.text! = topicQuestion
+            QHViewController.questionLabel.text! = topicQuestion!
         }
         else if segue.identifier == "famousPeopleSegue"{
             let QFViewController = segue.destination as! QuestionsViewController
-            QFViewController.questionLabel.text! = topicQuestion
+            QFViewController.questionLabel.text! = topicQuestion!
         }
         else if segue.identifier == "animalsSegue" {
             let QAViewController = segue.destination as! QuestionsViewController
-            QAViewController.questionLabel.text! = topicQuestion
+            QAViewController.questionLabel.text! = topicQuestion!
         }
         else if segue.identifier == "geographySegue" {
             let QGViewController = segue.destination as! QuestionsViewController
-            QGViewController.questionLabel.text! = topicQuestion
+            QGViewController.questionLabel.text! = topicQuestion!
         }
         
     }
